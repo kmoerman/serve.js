@@ -1,0 +1,7 @@
+{"main":"main.js"
+,"engines":{"node":">=22"}
+,"scripts":
+  { "test":"node test.js"
+  , "coverage":"node --experimental-test-coverage --test-reporter spec --test-reporter lcov --test-reporter-destination stdout --test-reporter-destination lcov.info test.js"
+  }
+}
