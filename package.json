@@ -1,7 +1,15 @@
-{"main":"main.js"
-,"engines":{"node":">=22"}
-,"scripts":
-  { "test":"node test.js"
-  , "coverage":"node --experimental-test-coverage --test-reporter spec --test-reporter lcov --test-reporter-destination stdout --test-reporter-destination lcov.info test.js"
-  }
+{
+  "main": "main.js",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "coverage": "npx nyc node test.js"
+  },
+  "devDependencies": {
+    "nyc": "^18.0.0"
+  },
+  "name": "@kmoerman/serve.js",
+  "version": "1.0.0"
 }

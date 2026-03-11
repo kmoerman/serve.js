@@ -1,0 +1,5 @@
+extension: .js
+
+reporter:
+  - lcov
+  - text
